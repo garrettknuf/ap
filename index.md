@@ -22,7 +22,8 @@ I am fascinated by the way hardware and software can be integrated together, and
   * Firmware developed for I2C and Bluetooth Low Energy for minimal power consumption
 
 * <b>Caltech</b> - <em>Teaching Assistant</em> (September 2023 - December 2023)
-  * Assisted students with electronic system prototyping skills including schematic capture, PCB layout, and board assembly and circuit debugging
+  * Assisted students with electronic system prototyping skills
+  * Schematic capture, PCB layout, and board assembly and circuit debugging
 
 * <b>Honeybee Robotics</b> - <em>Software Engineering Intern</em> (June 2023 - September 2023)
   * Developed embedded software in C
@@ -34,8 +35,7 @@ I am fascinated by the way hardware and software can be integrated together, and
   * Designed UAV payload and performed signal processing of Doppler effects with MATLAB
 
 * <b>Idea Lab Kids</b> - <em> Electronics Intern</em> (June 2021 - August 2021)
-  * Designed projects for students (K-8) to learn about robotics
-  * Circuit design and coding with Arduino; Developed miniature Arduino smart home
+  * Designed projects for students (K-8) to learn about robotics, circuit design, and coding with Arduino
   * Created 30+ lesson plans and performed Q&A on 50+ lessons
 
 

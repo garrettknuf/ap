@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Create AP theme"
-info: "Create About/Portfolio theme"
-tech : "ruby, jekyll"
-type: Toy
+title:  "Verilog 8-bit CPU"
+info: "Caltech10 CPU"
+date: December 2023
+tech : "Verilog, Digital Design"
+img: "../assets/img/cpu_arch.jpg"
+summary: The Caltech10 CPU is an 8-bit Harvard-architecture, accumulator-based CPU. The CPU has an 8-bit accumulator, two 8-bit data addressing registers (X and S) and a 13-bit program counter. All instructions are a single 16-bit word and almost all instructions execute in a single clock cycle.
 ---
 
 ## Create AP theme

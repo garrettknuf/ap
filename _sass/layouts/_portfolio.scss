@@ -14,6 +14,11 @@
       border: 0;
     }
   }
+
+  &-entry {
+    float:left;
+    width: 45%;
+  }
   
   &-title {
     color: $default-shade;
@@ -45,5 +50,11 @@
 
   &-icon-text {
     margin-left: 0.8rem;
+  }
+
+
+  img {
+    float: right;
+    width: 45%;
   }
 }
