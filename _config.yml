@@ -1,7 +1,7 @@
 # Site settings
 title: Garrett Knuf
 baseurl: ""
-url: "https://garrettknuf.github.io/website"
+url: "https://garrettknuf.github.io/website/"
 google_analytics: # Tracking ID, e.g. "UA-000000-01"
 
 # Author
