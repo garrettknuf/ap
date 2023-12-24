@@ -41,25 +41,32 @@
   <h2 class="post-title">ADSR Synthesizer Module</h2>
   <div class="post-line"></div>
 
-  <h2 id="reservation-bot">Reservation Bot</h2>
-<p>This is just a project that suddenly reminds me.<br />
-Of course I did not actually work, I wrote something plausible.<br />
-To be honest, the project here is a virtual project.<br />
-It’s all fake.</p>
+  <h2 id="user-interface">User Interface</h2>
+<ul>
+  <li>LEDs - indicates status of system (i.e., current waveform being generated)</li>
+  <li>Push buttons - sets shape of waveform</li>
+  <li>Potentiometers - modifies ADSR amplitude envelope controls</li>
+  <li>DAC - sets audio output to generate waveform</li>
+  <li>USB - reads keypresses via UART</li>
+</ul>
 
-<h2 id="tech">Tech</h2>
-<p>I usually create a Bot with Slack and build it using the slack API.<br />
-nd I used my favorite Python.</p>
+<h2 id="waveform-generation">Waveform Generation</h2>
+<p>The software for the Dragonfly Synthesizer Module is an event-driven architecture. Timer peripherals of AVR microcontroller generate interrupts handle button debouncing, ADC reading, UART communications, and waveform sampling.</p>
 
-<h2 id="duration">Duration</h2>
-<p>I’ll make it in a day.</p>
+<p>The DAC is updated every 25 microseconds yielding a 40 kHz sampling rate. It has 8-bit resolution (256 values). The microcontroller must compute the next sample within 400 clocks (25 us) to ensure that the next sample matches the desired waveform.</p>
+
+<p>The system of capable of computing square, sine, triangle, and sawtooth waveforms. Once the sample corresponding to the frequency is generated, it is then scaled to match the ADSR (attack, decay, sustain, release) envelope.</p>
+
+<p><img src="../assets/img/synth_case.jpg" /></p>
+
+<p><img src="../assets/img/synth_pcb.png" /></p>
 
 
 </div>
 
 <div class="pagination">
   
-    <a href="/2023-12-01/verilog-cpu" class="left next">Prev</a>
+    <a href="/2023-12-01/cpu" class="left next">Prev</a>
   
   
     <a href="/2023-06-01/electric-piano" class="right next">Next</a>
@@ -72,7 +79,7 @@ nd I used my favorite Python.</p>
 
     <footer>
       <span>
-        &copy; <time datetime="2023-12-20 18:28:57 +0000">2023</time> Garrett Knuf
+        &copy; <time datetime="2023-12-23 23:14:26 +0000">2023</time> Garrett Knuf
       </span>
     </footer>
   </body>

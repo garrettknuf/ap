@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Garrett Knuf</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">Garrett Knuf</h2>
+        </a>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <h2 class="post-title">WS2812b Digital Interface</h2>
+  <div class="post-line"></div>
+
+  <p>Individually Addressable RGB LED Driver Digital Interface</p>
+
+<p>Reverse-engineered from <a href="https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf">WS2812B Datasheet</a></p>
+
+<p>View source files at <a href="https://github.com/garrettknuf/WS2812B-Digital-Design/tree/master">Github Code Repository</a></p>
+
+<p><b>What makes this project unique?</b><br />
+Unlike other WS2812b drivers found online, this code emulates the behavior of a WS2812b instead of controlling one.
+Other drivers for this ICs are made with the objective of setting different RGB values to LEDs strip in different patterns
+while this project is an attempt to reverse-engineer to WS2812b itself and how the digital interface might appear inside the IC.</p>
+
+<h2 id="test-setup">Test Setup</h2>
+<ul>
+  <li>Arduino sends commands through <code class="language-plaintext highlighter-rouge">DIN</code> to WS2812B ICs</li>
+  <li>ICs are connected in a cascade, receiving data on <code class="language-plaintext highlighter-rouge">DIN</code> and transmitting data on <code class="language-plaintext highlighter-rouge">DOUT</code></li>
+  <li>Basys 3 Artix-7 FPGA connected on daisy chain to emulate WS2812B behavior</li>
+</ul>
+
+<p><img src="../assets/img/ws2812b_test_setup.png" alt="image" /></p>
+
+<h2 id="digital-interface-architecture">Digital Interface Architecture</h2>
+<ul>
+  <li>Implemented in Verilog with an Basys 3 Artix-7 FPGA</li>
+  <li>FPGA uses 100 MHz internal clock for system timing</li>
+</ul>
+
+<p><img src="../assets/img/ws2812b_arch.png" alt="image" /></p>
+
+
+</div>
+
+<div class="pagination">
+  
+  
+    <a href="/2023-12-01/cpu" class="right next">Next</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2023-12-23 23:14:26 +0000">2023</time> Garrett Knuf
+      </span>
+    </footer>
+  </body>
+</html>

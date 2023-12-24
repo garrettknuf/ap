@@ -10,10 +10,10 @@ layout: base
           <div class="portfolio-line"></div>
         
           <div class="portfolio-content"> 
-              <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">{{ post.info }} <br>
-              <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">{{ post.date | date: "%B %Y" }} <br>
-              <i class="fa fa-cog"></i><span class="portfolio-icon-text">{{ post.tech }} <br>
+              <!-- <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">{{ post.info }} <br> -->
+              <!-- <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">{{ post.date | date: "%B %Y" }} <br> -->
               <p>{{ post.summary }}</p>
+              <i class="fa fa-cog"></i><span class="portfolio-icon-text">{{ post.tech }} <br>
           </div>
       </div>
       <img src={{ post.img }} alt="Image_missing">
@@ -22,7 +22,7 @@ layout: base
   {% endfor %}
 </div>
 
-<div class="pagination">
+<!-- <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left next">Prev</a>
   {% endif %}
@@ -30,5 +30,5 @@ layout: base
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right next">Next</a>
   {% endif %}
 
-  <span>{{ paginator.page }}</span>
+  <span>{{ paginator.page }}</span> -->
 </div>

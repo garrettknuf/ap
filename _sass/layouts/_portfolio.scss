@@ -3,7 +3,7 @@
     border-bottom: 1px solid $grey-2;
     color: $default-color;
     display: inline-block;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 
     &:hover .portfolio-line,
     &:focus .portfolio-line {
@@ -17,7 +17,7 @@
 
   &-entry {
     float:left;
-    width: 45%;
+    width: 55%;
   }
   
   &-title {
@@ -26,7 +26,7 @@
     font-family: $sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    margin: .5rem 0;
+    margin: 0rem 0;
   }
 
   &-line {
@@ -37,7 +37,7 @@
   }
 
   &-content {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     color: $default-shade;
     font-family: $sans-serif;
     font-size: 1rem;
@@ -55,6 +55,7 @@
 
   img {
     float: right;
-    width: 45%;
+    width: 35%;
+    border: 5px solid #555;
   }
 }

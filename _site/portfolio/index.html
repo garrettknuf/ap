@@ -39,16 +39,32 @@
     <main>
       <div class="portfolio">
   
-    <a href="/2023-12-01/verilog-cpu" class="portfolio-item">
+    <a href="/2023-12-01/ws2812b" class="portfolio-item">
       <div class = "portfolio-entry">
-          <h1 class="portfolio-title">Verilog 8-bit CPU</h1>
+          <h1 class="portfolio-title">WS2812b Digital Interface</h1>
           <div class="portfolio-line"></div>
         
           <div class="portfolio-content"> 
-              <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Caltech10 CPU <br>
-              <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">December 2023 <br>
-              <i class="fa fa-cog"></i><span class="portfolio-icon-text">Verilog, Digital Design <br>
-              <p>The Caltech10 CPU is an 8-bit Harvard-architecture, accumulator-based CPU. The CPU has an 8-bit accumulator, two 8-bit data addressing registers (X and S) and a 13-bit program counter. All instructions are a single 16-bit word and almost all instructions execute in a single clock cycle.</p>
+              <!-- <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text"> <br> -->
+              <!-- <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">December 2023 <br> -->
+              <p>Individually Addressable RGB LED Driver Digital Interface designed in Verilog. Reverse-engineered from WS2812b datasheet and implemented on Basys 3 Artix-7 FPGA.</p>
+              <i class="fa fa-cog"></i><span class="portfolio-icon-text">Digital Design, Verilog, FPGA <br>
+          </div>
+      </div>
+      <img src=../assets/img/ws2812b_arch.png alt="Image_missing">
+    </a>
+    </br>
+  
+    <a href="/2023-12-01/cpu" class="portfolio-item">
+      <div class = "portfolio-entry">
+          <h1 class="portfolio-title">Caltech10 8-bit CPU</h1>
+          <div class="portfolio-line"></div>
+        
+          <div class="portfolio-content"> 
+              <!-- <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text"> <br> -->
+              <!-- <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">December 2023 <br> -->
+              <p>8-bit Harvard-architecture, accumulator-based CPU. The CPU has an 8-bit accumulator, two 8-bit data addressing registers (X and S) and a 13-bit program counter. All instructions are a single 16-bit word and almost all instructions execute in a single clock cycle.</p>
+              <i class="fa fa-cog"></i><span class="portfolio-icon-text">Digital Design, ABEL, CPU Architecture <br>
           </div>
       </div>
       <img src=../assets/img/cpu_arch.jpg alt="Image_missing">
@@ -61,13 +77,13 @@
           <div class="portfolio-line"></div>
         
           <div class="portfolio-content"> 
-              <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Dragonfly Synth Module <br>
-              <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">August 2023 <br>
-              <i class="fa fa-cog"></i><span class="portfolio-icon-text">Atmega, SPI Digital-to-Analog Converter, Waveform Generation <br>
-              <p>...</p>
+              <!-- <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Dragonfly Synth Module <br> -->
+              <!-- <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">August 2023 <br> -->
+              <p>PCB designed with AVR microcontroller and SPI Digital-to-Analog Converter to generate square, sine, triangle, and sawtooth waves. Potentiometers are used to control ADSR (attack, decay, sustain, release) envelopes of waveforms.</p>
+              <i class="fa fa-cog"></i><span class="portfolio-icon-text">PCB Design, AVR Microcontroller, Waveform Generation <br>
           </div>
       </div>
-      <img src=../assets/img/synth.jpg alt="Image_missing">
+      <img src=../assets/img/synth_pcb.png alt="Image_missing">
     </a>
     </br>
   
@@ -77,13 +93,13 @@
           <div class="portfolio-line"></div>
         
           <div class="portfolio-content"> 
-              <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Basic synthesizer <br>
-              <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">June 2023 <br>
-              <i class="fa fa-cog"></i><span class="portfolio-icon-text">Arduino, Op amps, Low pass filters, Transistors <br>
-              <p>...</p>
+              <!-- <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Basic synthesizer <br> -->
+              <!-- <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">June 2023 <br> -->
+              <p>This piano uses a DAC to convert keypresses into an analog voltage. A voltage to frequency converter designed with op amps generates a frequency corresponding key pressed. A three-stage low pass filter creates sine wave and a transistor operated in triode region allows non-linear gain for note fading effects.</p>
+              <i class="fa fa-cog"></i><span class="portfolio-icon-text">Op amps, Low pass filters, Transistors <br>
           </div>
       </div>
-      <img src=../assets/img/piano.jpg alt="Image_missing">
+      <img src=../assets/img/piano.png alt="Image_missing">
     </a>
     </br>
   
@@ -93,10 +109,10 @@
           <div class="portfolio-line"></div>
         
           <div class="portfolio-content"> 
-              <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Caltech Racing Dashboard Controls <br>
-              <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">March 2023 <br>
+              <!-- <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Caltech Racing Dashboard Controls <br> -->
+              <!-- <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">March 2023 <br> -->
+              <p>PCB designed with STM32 microcontroller to process dashboard controls of Formula SAE racing car. It handles debouncing of buttons, rotary encoders, LCD display, and communicating with other systems via CAN bus.</p>
               <i class="fa fa-cog"></i><span class="portfolio-icon-text">STM32, Altium, CAN, LCD, Power Electronics <br>
-              <p>...</p>
           </div>
       </div>
       <img src=../assets/img/dashboard.jpg alt="Image_missing">
@@ -109,32 +125,46 @@
           <div class="portfolio-line"></div>
         
           <div class="portfolio-content"> 
-              <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Arduino-based LED Wall Clock <br>
-              <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">August 2022 <br>
+              <!-- <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Arduino-based LED Wall Clock <br> -->
+              <!-- <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">August 2022 <br> -->
+              <p>This project contains individually addressable LED strips and 128 ping pong balls acting as light diffusers to construct a clock. It has several modes and animations controlled by an Infrared remote and Arduino.</p>
               <i class="fa fa-cog"></i><span class="portfolio-icon-text">Arduino, RTC, FastLED, IR receiver <br>
-              <p>...</p>
           </div>
       </div>
-      <img src=../assets/img/clock.jpg alt="Image_missing">
+      <img src=../assets/img/clock.png alt="Image_missing">
+    </a>
+    </br>
+  
+    <a href="/2022-06-01/binario" class="portfolio-item">
+      <div class = "portfolio-entry">
+          <h1 class="portfolio-title">AVR Assembly Game</h1>
+          <div class="portfolio-line"></div>
+        
+          <div class="portfolio-content"> 
+              <!-- <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">Binario <br> -->
+              <!-- <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">June 2022 <br> -->
+              <p>This board is programmed in AVR assembly to run an interactive Binario game. Features on this board includes a multiplexed 8x8 LED matrix, debounced switches and encoders, tone generation, and EEROM.</p>
+              <i class="fa fa-cog"></i><span class="portfolio-icon-text">AVR Assembly, LED matrix, SPI EEROM <br>
+          </div>
+      </div>
+      <img src=../assets/img/binario.png alt="Image_missing">
     </a>
     </br>
   
 </div>
 
-<div class="pagination">
+<!-- <div class="pagination">
   
-  
-    <a href="/portfolio/page2/" class="right next">Next</a>
   
 
-  <span>1</span>
+  <span>1</span> -->
 </div>
 
     </main>
 
     <footer>
       <span>
-        &copy; <time datetime="2023-12-20 18:28:57 +0000">2023</time> Garrett Knuf
+        &copy; <time datetime="2023-12-23 23:14:26 +0000">2023</time> Garrett Knuf
       </span>
     </footer>
   </body>

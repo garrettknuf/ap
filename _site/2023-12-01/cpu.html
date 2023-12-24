@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Garrett Knuf</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">Garrett Knuf</h2>
+        </a>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <h2 class="post-title">Caltech10 8-bit CPU</h2>
+  <div class="post-line"></div>
+
+  <h2 id="cpu-architecture">CPU Architecture</h2>
+<p>The Caltech10 CPU was designed by Glen George for Caltech EE/CS 10a, Introduction to Digital Logic and Embedded Systems.
+It was implemented for a final project by Garrett Knuf in ABEL (Advanced Boolean Expression Language).</p>
+
+<p>Source code available at <a href="https://github.com/garrettknuf/Caltech10-CPU"><u>Github Caltech10-CPU Repository</u></a></p>
+
+<p>The following modules were implemented and integrated:</p>
+<ul>
+  <li>Arithmetic Logic Unit (ALU)
+    <ul>
+      <li>Performs all standard logical and arithmetic operations</li>
+      <li>One operand is always the accumulator and the other operand is a value from data memory or an immediate value encoded in instruction</li>
+      <li>ALU operations can affect sign (S), zero (Z), overflow (V), and carry (C) flags</li>
+    </ul>
+  </li>
+  <li>Program Access Unit (PAU)
+    <ul>
+      <li>Used to access code stored in program memory</li>
+      <li>The program memory address is always either from the program counter, possibly modified with a signed value from the instruction, or from the instruction itself for unconditional jumps and subroutine calls</li>
+    </ul>
+  </li>
+  <li>Data Access Unit (DAU)
+    <ul>
+      <li>Used to access data memory and I/O space</li>
+      <li>The data memory address can be formed from an absolute address in the instruction or by adding an offset in the isntruction to the value of one of the index registers (X or S)</li>
+      <li>Includes a RD signal to indicate a read operation, a WR signal to indicate a write operation, and an IO signal to indicate I/O space is being accessed instead of data memory</li>
+    </ul>
+  </li>
+  <li>Control Unit (CU)
+    <ul>
+      <li>16-bit instruction register that holds the instruction to be executed and the logic for decoding this instruction</li>
+      <li>Contains simple state machine to control instruction executing for instructions that take multiple clock cycles to execute</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="../assets/img/cpu_arch.jpg" alt="img" /></p>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/2023-12-01/ws2812b" class="left next">Prev</a>
+  
+  
+    <a href="/2023-08-01/synth" class="right next">Next</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2023-12-23 23:14:26 +0000">2023</time> Garrett Knuf
+      </span>
+    </footer>
+  </body>
+</html>
