@@ -1,7 +1,7 @@
 # Site settings
 title: Garrett Knuf
 baseurl: ""
-url: "https://garrettknuf.github.io"
+url: "https://garrettknuf.github.io/portfolio"
 google_analytics: # Tracking ID, e.g. "UA-000000-01"
 
 # Author
@@ -52,7 +52,7 @@ plugins:
 # Permalinks
 permalink: /:year-:month-:day/:title
 paginate_path: "/portfolio/page:num/"
-paginate: 30
+paginate: 100
 exclude:
   - "Gemfile"
   - "Gemfile.lock"
