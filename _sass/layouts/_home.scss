@@ -34,4 +34,28 @@
   &-icon-text {
     margin-left: 0.8rem;
   }
+
+  // li {
+  //   display:inline-block;
+  //   color: rgb(255,0,0);
+  //   width: 80%;
+  // }
+
+  .exp_format {
+    display: inline-block;
+  }
+
+  .experience {
+    display: flexbox;
+    width: 75;
+    float: left;
+    width: 85%;
+    padding-bottom: 20px;
+  }
+
+  .experience_logo {
+    border: 2px;
+    float: right;
+    width: 15%;
+  }
 }

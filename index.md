@@ -14,36 +14,77 @@ I am fascinated by the way hardware and software can be integrated together, and
   * Embedded systems design, digital systems design, signal processing, PCB design, analog circuit design, feedback and control circuits, and computing systems
 
 # Experience
+<div class="exp_format">
+<ul>
+  <div class="experience">
+    <li><b>Cadence Design Systems</b> - <em>Application Engineering Intern</em> (Incoming Summer 2024)</li>
+  </div>
+  <div class="experience_logo">
+        <img src="../assets/img/cadence_logo.png">
+  </div>
 
-* <b>Cadence Design Systems</b> - <em>Application Engineering Intern</em> (Incoming Summer 2024)
+  <div class="experience">
+    <li><b>Caltech Mixed-mode Integrated Circuits and Systems Lab</b> - <em>Undergraduate Researcher</em> (September 2023 - Present)</li>
+    <ul>
+      <li>System-level design of I2C and digital interfaces for ASIC to communicate with Nordic microcontroller</li>
+      <li>Firmware developed for I2C and Bluetooth Low Energy for minimal power consumption</li>
+    </ul>
+  </div>
+  <div class="experience_logo">
+    <img src="../assets/img/mics_logo.png">
+  </div>
 
-* <b>Caltech Mixed-mode Integrated Circuits and Systems Lab</b> - <em>Undergraduate Researcher</em> (September 2023 - Present)
-  * System-level design of I2C and digital interfaces for ASIC to communicate with Nordic microcontroller
-  * Firmware developed for I2C and Bluetooth Low Energy for minimal power consumption
+  <div class="experience">
+    <li><b>Caltech</b> - <em>Teaching Assistant</em> (September 2023 - December 2023)</li>
+    <ul>
+      <li>Assisted students with electronic system prototyping skills</li>
+      <li>Schematic capture, PCB layout, and board assembly and circuit debugging</li>
+    </ul>
+  </div>
+  <div class="experience_logo">
+    <img src="../assets/img/caltech_logo.png">
+  </div>
 
-* <b>Caltech</b> - <em>Teaching Assistant</em> (September 2023 - December 2023)
-  * Assisted students with electronic system prototyping skills
-  * Schematic capture, PCB layout, and board assembly and circuit debugging
+  <div class="experience">
+    <li><b>Honeybee Robotics</b> - <em>Software Engineering Intern</em> (June 2023 - September 2023)</li>
+    <ul>
+      <li>Developed embedded software in C</li>
+      <li>Implemented state machines with RTOS, hardware emulators, and packet transfer test scripts</li>
+      <li>Worked with FPGA and electrical design teams to coordinate design specifications</li>
+    </ul>
+  </div>
+  <div class="experience_logo">
+        <img src="../assets/img/hbr_logo.png">
+  </div>
 
-* <b>Honeybee Robotics</b> - <em>Software Engineering Intern</em> (June 2023 - September 2023)
-  * Developed embedded software in C
-  * Implemented state machines with RTOS, hardware emulators, and packet transfer test scripts
-  * Worked with FPGA and electrical design teams to coordinate design specifications 
+  <div class="experience">
+    <li><b>NASA Jet Propulsion Laboratory</b> - <em>Undergraduate Researcher</em> (June 2022 - August 2022)</li>
+    <ul>
+      <li>Created testbed with Linux-based software designed radios to characterize multipath propagation effects at lunar landing sites</li>
+      <li>Designed UAV payload and performed signal processing of Doppler effects with MATLAB</li>
+    </ul>
+  </div>
+  <div class="experience_logo">
+        <img src="../assets/img/jpl_logo.png">
+  </div>
 
-* <b>NASA Jet Propulsion Laboratory</b> - <em>Undergraduate Researcher</em> (June 2022 - August 2022)
-  * Created testbed with Linux-based software designed radios to characterize multipath propagation effects at lunar landing sites
-  * Designed UAV payload and performed signal processing of Doppler effects with MATLAB
+  <div class="experience">
+    <li><b>Idea Lab Kids</b> - <em> Electronics Intern</em> (June 2021 - August 2021)</li>
+    <ul>
+      <li>Designed projects for students (K-8) to learn about robotics, circuit design, and coding with Arduino</li>
+      <li>Created 30+ lesson plans and performed Q&A on 50+ lessons</li>
+    </ul>
+  </div>
+  <div class="experience_logo">
+        <img src="../assets/img/idealabkids_logo.png">
+  </div>
 
-* <b>Idea Lab Kids</b> - <em> Electronics Intern</em> (June 2021 - August 2021)
-  * Designed projects for students (K-8) to learn about robotics, circuit design, and coding with Arduino
-  * Created 30+ lesson plans and performed Q&A on 50+ lessons
-
+</ul>
+</div>
 
 # Clubs and Activities
-
 * <b>Caltech NCAA Baseball Team</b> (September 2021 - Present)
   * Committed approximately 25 hours per week to training, meetings, travel, and competition while maintaining full course load during spring season
-
 * <b>Caltech Racing</b> - <em>Electrical Team</em> (September 2022 - Present)
   * Designed dashboard electronics for Formula SAE competition car
   * Schematic capture and PCB design in Altium
@@ -55,17 +96,18 @@ I am fascinated by the way hardware and software can be integrated together, and
 
 
 # Skills
-* Verilog, C, Python, MATLAB 
-* ARM & AVR Microcontrollers (TI, STM32, Nordic, Atmega)
-* Schematic Capture and PCB Design (Altium)
-* X86 and ARM Assembly
-* SPICE simulation
-* I2C, SPI, UART, and CAN communication protocols
+* Digital Design: Verilog
+* Low-level software/firmware: C and Assembly
+* Schematic Capture and PCB Design: Diptrace and Altium
+* Microcontrollers: ARM Architecure (TI, STM32, Nordic)
+* Circuit design: SPICE simulation
+* Communication protocols: I2C, SPI, UART, CAN
+* Data analysis: MATLAB
+* Higher-level langages: Python and Java
+
 
 # Awards
 * Academic All-District
   * Recognizes NCAA athletes for outstanding performance on the field and in the classroom
 * Eagle Scout
   * Highest rank in Boy Scouts of America
-
-
